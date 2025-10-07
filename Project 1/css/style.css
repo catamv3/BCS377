@@ -1,0 +1,186 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8d5f2 0%, #dce8f5 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header Text */
+.header-text {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #bb28bd;
+    margin-bottom: 40px;
+}
+
+/* Circle Container */
+.circle-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto 40px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Half Buttons */
+.half-button {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.left-half {
+    left: 0;
+    border-radius: 469px 0 0 469px;
+}
+
+.right-half {
+    right: 0;
+    border-radius: 0 469px 469px 0;
+}
+
+/* Hover effect */
+.half-button:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+/* New Classes for Node Images */
+.south-node {
+    background-image: url("../images/south_node.jpeg");
+}
+
+.north-node {
+    background-image: url("../images/north_node.jpeg");
+}
+
+/* Divider Line */
+.divider-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #075a3a;
+}
+
+/* Page Styles for South/North Node Pages */
+.page-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.back-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #333;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.content-area {
+    text-align: left;
+    line-height: 1.8;
+    color: #555;
+}
+
+.content-area p {
+    margin-bottom: 15px;
+}
+
+.node-image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.node-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .circle-container {
+        width: 350px;
+        height: 398px;
+    }
+    
+    .left-half {
+        border-radius: 199px 0 0 199px;
+    }
+    
+    .right-half {
+        border-radius: 0 199px 199px 0;
+    }
+    
+    .header-text,
+    .footer-text {
+        font-size: 1.2rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .node-image {
+        width: 250px;
+        height: 250px;
+    }
+}
