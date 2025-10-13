@@ -6,21 +6,374 @@
     <title>South Node - BCS 377 Project 1</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="container page-container">
-        <div class="nav-header">
-            <a href="index.html" class="back-link">← Back to Main</a>
-        </div>
-        
-        <h1 class="page-title">South Node</h1>
+<body class="south-scroll-body">
+    <div class="color-backdrop" aria-hidden="true"></div>
 
-        <div class="content-area">
-            <div>
-                <img src="../images/south_node.png" alt="South Node" class="node-hero-image">
-            </div>
-            <p>This is the South Node page content.</p>
-            <p>Add your content here for the left image/button.</p>
-        </div>
+    <div class="nav-header-floating">
+        <a href="index.html" class="back-link">← Back to Main</a>
     </div>
+
+    <div class="south-scroll-layout">
+        <aside class="side-nav" id="sideNav">
+            <div class="side-nav-content">
+                <div class="side-nav-header">
+                    <span class="side-nav-label">South Node</span>
+                    <h2 class="side-nav-title">Artistic Facets</h2>
+                    <p class="side-nav-subtitle">Scroll to move through the work. Colors, imagery, and tone stay in sync.</p>
+                </div>
+
+                <div class="side-nav-preview">
+                    <div class="preview-frame">
+                        <img src="../images/south_node.png" alt="" id="sideNavPreview">
+                    </div>
+                    <div class="preview-meta">
+                        <span class="preview-category" id="sideNavCategory">Origin</span>
+                        <span class="preview-title" id="sideNavTitle">Manifesto</span>
+                    </div>
+                </div>
+
+                <nav class="side-nav-links" id="dynamicNav"></nav>
+            </div>
+
+            <div class="side-nav-footer">
+                <div class="side-progress">
+                    <span class="progress-index" id="sideNavIndex">01</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="sideNavProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="scroll-container" id="scrollContainer">
+            <section class="scroll-section hero-section" id="section-0" data-color="#a19082" data-category="Origin" data-nav-title="Manifesto" data-preview="../images/south_node.png">
+                <div class="section-content">
+                    <img src="../images/south_node.png" alt="South Node collage" class="section-image">
+                </div>
+                <div class="section-info hero-info">
+                    <span class="section-category">South Node</span>
+                    <h2 class="section-title">Love is the operating system.</h2>
+                    <p class="section-description">Every experiment, drawing, and night photograph is evidence that creativity keeps life replicating; love is the constant I solve for.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-1" data-color="#6c7fa6" data-category="Art Projects" data-nav-title="Emotional Watercolor" data-preview="../images/southImages/artProject/emotional_watercolor.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/artProject/emotional_watercolor.jpeg" alt="Emotional Watercolor painting" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art Projects</span>
+                    <h2 class="section-title">Emotional Watercolor</h2>
+                    <p class="section-description">Color spectra measured like vital signs; each wash tracks how love diffuses through a waking life.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-2" data-color="#8a7d6f" data-category="Art Projects" data-nav-title="Ethics" data-preview="../images/southImages/artProject/ethics.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/artProject/ethics.jpeg" alt="Ethics mixed media artwork" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art Projects</span>
+                    <h2 class="section-title">Ethics</h2>
+                    <p class="section-description">Graphing ethical edge cases in charcoal to prove compassion—the most rigorous form of love—is our radical technology.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-3" data-color="#5f5348" data-category="Art Projects" data-nav-title="Headless" data-preview="../images/southImages/artProject/headless_southNode.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/artProject/headless_southNode.jpeg" alt="Headless South Node artwork" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art Projects</span>
+                    <h2 class="section-title">Headless</h2>
+                    <p class="section-description">Control study in surrender—once the head is gone, intuition reroutes the circuitry toward collaborative love.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-4" data-color="#834f4d" data-category="Art Projects" data-nav-title="Unconscious Unrest" data-preview="../images/southImages/artProject/unconsciousUnrest.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/artProject/unconsciousUnrest.jpeg" alt="Unconscious Unrest charcoal artwork" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art Projects</span>
+                    <h2 class="section-title">Unconscious Unrest</h2>
+                    <p class="section-description">Sleep lab sketching restless neurons learning to rest inside a kinder frequency of love.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-5" data-color="#b8b4ad" data-category="Art Projects" data-nav-title="Who Am I" data-preview="../images/southImages/artProject/whoAmI.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/artProject/whoAmI.jpeg" alt="Who Am I charcoal self portrait" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art Projects</span>
+                    <h2 class="section-title">Who Am I</h2>
+                    <p class="section-description">Self-portrait solved as equation: art + science + intimacy = a body that keeps becoming.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-6" data-color="#564237" data-category="Art" data-nav-title="Baby Node" data-preview="../images/southImages/art/babyNode.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/art/babyNode.jpeg" alt="Baby Node sketch" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art</span>
+                    <h2 class="section-title">Baby Node</h2>
+                    <p class="section-description">Prototype of my future self; love-coded annotations scribbled for whatever might grow next.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-7" data-color="#44403b" data-category="Art" data-nav-title="Charcoal Budding" data-preview="../images/southImages/art/charcoal_budding.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/art/charcoal_budding.jpeg" alt="Charcoal Budding drawing" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art</span>
+                    <h2 class="section-title">Charcoal Budding</h2>
+                    <p class="section-description">Growth algorithm in charcoal; every smudge records resilience expanding through joyful creativity.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-8" data-color="#5e4439" data-category="Art" data-nav-title="Grendel" data-preview="../images/southImages/art/grendel.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/art/grendel.jpeg" alt="Grendel drawing" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art</span>
+                    <h2 class="section-title">Grendel</h2>
+                    <p class="section-description">Rewriting the monster narrative so empathy—and unapologetic love—metabolises fear into softness.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-9" data-color="#c2b2a2" data-category="Art" data-nav-title="VIS 101" data-preview="../images/southImages/art/vis101.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/art/vis101.jpeg" alt="VIS 101 drawing" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Art</span>
+                    <h2 class="section-title">VIS 101</h2>
+                    <p class="section-description">Studio assignment mutated into thesis notes on perceiving tenderness and creative signal in every data set.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-10" data-color="#2d2e33" data-category="Fashion" data-nav-title="Motor Jacket" data-preview="../images/southImages/fashion/BKFW_motorjacket.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/fashion/BKFW_motorjacket.jpeg" alt="Brooklyn Fashion Week motor jacket" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Fashion</span>
+                    <h2 class="section-title">Motor Jacket</h2>
+                    <p class="section-description">Wearable experiment measuring kinetic joy; leather archives the pulse of love amplified on a runway.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-11" data-color="#41384b" data-category="Fashion" data-nav-title="Collective" data-preview="../images/southImages/fashion/BKFW_group.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/fashion/BKFW_group.jpeg" alt="Brooklyn Fashion Week group runway shot" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Fashion</span>
+                    <h2 class="section-title">Collective</h2>
+                    <p class="section-description">Group resonance study where community molecules sync to a shared love frequency beneath the lights.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-12" data-color="#715a82" data-category="Pines Party" data-nav-title="Dreamscape" data-preview="../images/southImages/pinesParty/pinesParty_dreamscape.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/pinesParty/pinesParty_dreamscape.jpeg" alt="Pines Party Dreamscape" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Pines Party</span>
+                    <h2 class="section-title">Dreamscape</h2>
+                    <p class="section-description">Fire Island fieldwork; ultraviolet fog proves chosen family refracts light with collaborative creativity.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-13" data-color="#8a5f63" data-category="Pines Party" data-nav-title="KK &amp; Agui" data-preview="../images/southImages/pinesParty/pinesParty_kkAgui.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/pinesParty/pinesParty_kkAgui.jpeg" alt="KK and Agui at Pines Party" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Pines Party</span>
+                    <h2 class="section-title">KK &amp; Agui</h2>
+                    <p class="section-description">Portrait of friends as renewable energy; their laughter loops like a feedback circuit of love.</p>
+                </div>
+            </section>
+
+            <section class="scroll-section" id="section-14" data-color="#455a86" data-category="Pines Party" data-nav-title="Mike &amp; Matt" data-preview="../images/southImages/pinesParty/pinesParty_mikeAndMatt.jpeg">
+                <div class="section-content">
+                    <img src="../images/southImages/pinesParty/pinesParty_mikeAndMatt.jpeg" alt="Mike and Matt at Pines Party" class="section-image">
+                </div>
+                <div class="section-info">
+                    <span class="section-category">Pines Party</span>
+                    <h2 class="section-title">Mike &amp; Matt</h2>
+                    <p class="section-description">Afterglow sample taken at dawn showing devotion as data you can chart in the softest light.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const sections = Array.from(document.querySelectorAll('.scroll-section'));
+        const sideNav = document.getElementById('sideNav');
+        const navContainer = document.getElementById('dynamicNav');
+        const sideNavPreview = document.getElementById('sideNavPreview');
+        const sideNavCategory = document.getElementById('sideNavCategory');
+        const sideNavTitle = document.getElementById('sideNavTitle');
+        const sideNavIndex = document.getElementById('sideNavIndex');
+        const sideNavProgress = document.getElementById('sideNavProgress');
+        const colorBackdrop = document.querySelector('.color-backdrop');
+
+        function toPaddedIndex(index) {
+            return String(index + 1).padStart(2, '0');
+        }
+
+        function clampChannel(value) {
+            return Math.max(0, Math.min(255, Math.round(value)));
+        }
+
+        function hexToRgb(hex) {
+            const sanitized = hex.replace('#', '');
+            const bigint = parseInt(sanitized, 16);
+            return {
+                r: (bigint >> 16) & 255,
+                g: (bigint >> 8) & 255,
+                b: bigint & 255
+            };
+        }
+
+        function rgbToHex({ r, g, b }) {
+            return '#' + ((1 << 24) + (clampChannel(r) << 16) + (clampChannel(g) << 8) + clampChannel(b)).toString(16).slice(1);
+        }
+
+        function shadeColor(hex, percent) {
+            const { r, g, b } = hexToRgb(hex);
+            return rgbToHex({
+                r: r + (255 - r) * (percent / 100),
+                g: g + (255 - g) * (percent / 100),
+                b: b + (255 - b) * (percent / 100)
+            });
+        }
+
+        function tintColor(hex, percent) {
+            const { r, g, b } = hexToRgb(hex);
+            return rgbToHex({
+                r: r * (1 - percent / 100),
+                g: g * (1 - percent / 100),
+                b: b * (1 - percent / 100)
+            });
+        }
+
+        function toRgba(hex, alpha) {
+            const { r, g, b } = hexToRgb(hex);
+            return `rgba(${clampChannel(r)}, ${clampChannel(g)}, ${clampChannel(b)}, ${alpha})`;
+        }
+
+        function applyAccentColor(hex) {
+            if (!hex) {
+                return;
+            }
+
+            const base = hex;
+            const lighter = shadeColor(base, 18);
+            const darker = tintColor(base, 30);
+
+            document.documentElement.style.setProperty('--accent-color', base);
+            document.documentElement.style.setProperty('--accent-color-soft', toRgba(lighter, 0.45));
+            document.documentElement.style.setProperty('--accent-color-strong', darker);
+
+            if (sideNav) {
+                sideNav.style.background = `linear-gradient(180deg, ${toRgba(base, 0.92)} 0%, ${toRgba(darker, 0.92)} 100%)`;
+                sideNav.style.boxShadow = `36px 0 120px ${toRgba(base, 0.25)}`;
+            }
+
+            if (colorBackdrop) {
+                colorBackdrop.style.background = `
+                    radial-gradient(circle at 18% 22%, ${toRgba(lighter, 0.35)} 0%, transparent 60%),
+                    radial-gradient(circle at 80% 78%, ${toRgba(base, 0.28)} 0%, transparent 62%),
+                    radial-gradient(circle at 45% 48%, ${toRgba(darker, 0.45)} 0%, transparent 70%)
+                `;
+            }
+        }
+
+        sections.forEach((section, index) => {
+            if (!section.id) {
+                section.id = `section-${index}`;
+            }
+
+            const navLink = document.createElement('a');
+            navLink.href = `#${section.id}`;
+            navLink.className = 'side-nav-link';
+            navLink.dataset.index = index.toString();
+            const title = section.dataset.navTitle || section.querySelector('.section-title')?.textContent || `Section ${index + 1}`;
+            navLink.innerHTML = `
+                <span class="link-number">${toPaddedIndex(index)}</span>
+                <span class="link-dot" aria-hidden="true"></span>
+                <span class="link-text">${title}</span>
+            `;
+            navContainer?.appendChild(navLink);
+        });
+
+        const navLinks = Array.from(document.querySelectorAll('.side-nav-link'));
+
+        function updateActiveSection() {
+            const scrollPos = window.scrollY + window.innerHeight * 0.35;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const sectionTop = window.scrollY + rect.top;
+                const sectionBottom = sectionTop + rect.height;
+
+                if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const activeLink = navLinks.find(link => Number(link.dataset.index) === index);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+
+                    const color = section.dataset.color;
+                    applyAccentColor(color);
+
+                    const previewSrc = section.dataset.preview || section.querySelector('img')?.getAttribute('src');
+                    if (previewSrc && sideNavPreview?.getAttribute('src') !== previewSrc) {
+                        sideNavPreview.setAttribute('src', previewSrc);
+                    }
+
+                    if (sideNavCategory) {
+                        sideNavCategory.textContent = section.dataset.category || '';
+                    }
+
+                    const titleText = section.dataset.navTitle || section.querySelector('.section-title')?.textContent || '';
+                    if (sideNavTitle) {
+                        sideNavTitle.textContent = titleText;
+                    }
+
+                    if (sideNavIndex) {
+                        sideNavIndex.textContent = toPaddedIndex(index);
+                    }
+
+                    if (sideNavProgress) {
+                        const progress = index / Math.max(sections.length - 1, 1);
+                        sideNavProgress.style.width = `${Math.max(progress, 0.02) * 100}%`;
+                    }
+                }
+            });
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateActiveSection);
+        window.addEventListener('load', updateActiveSection);
+        window.addEventListener('resize', updateActiveSection);
+    </script>
 </body>
 </html>
