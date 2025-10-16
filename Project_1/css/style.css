@@ -721,7 +721,6 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   width: min(60vw, 65vh);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -752,9 +751,11 @@ body {
 .south-node {
   background-image: url("../images/south_node.png");
   background-position: center;
-  background-size: cover;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-color: #333030;
+  border-top-left-radius: 90%;
+  border-bottom-left-radius: 90%;
   position: relative;
 }
 
@@ -769,12 +770,14 @@ body {
 }
 
 .north-node {
-  background-image: url("../images/north_node.png");
+  background-image: url("../images/north_node.JPEG");
   background-position: center;
-  background-size: cover;
+  background-size: 265%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  position: relative;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: left;
 }
 
 .north-node::before {
