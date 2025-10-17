@@ -285,15 +285,37 @@ body {
   margin: 40px 0;
 }
 
-.section-title {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 20px;
+.section-header{
+  display: flex;
+  flex-direction: row;
   border-bottom: 3px solid;
   border-image: linear-gradient(90deg, #8470ff 0%, #6495ED 50%, rgba(192, 192, 192, 0.6) 100%) 1;
+
+}
+
+.section-title {
+  font-size: 1.8rem;
+  width: 30%;
+  background: linear-gradient(90deg, #8470ff 0%, #6495ED 50%, rgb(161, 162, 168) 99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   text-shadow: 0 0 20px rgba(177, 156, 217, 0.3);
+  justify-content: center;
 }
+
+.section-header-content {
+  margin-left: 38px;
+  font-size: 1rem;
+  color: #555;
+  align-self: center;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+
 
 .card-grid {
   display: grid;
@@ -751,7 +773,7 @@ body {
 .south-node {
   background-image: url("../images/south_node.png");
   background-position: center;
-  background-size: 115%;
+  background-size: 105%;
   background-repeat: no-repeat;
   background-color: #333030;
   border-top-left-radius: 90%;
